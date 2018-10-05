@@ -88,11 +88,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assest\Css\style.css" />
+    <Content Include="Assest\Css\swiper.min.css" />
+    <Content Include="Assest\Image\1.jpg" />
+    <Content Include="Assest\Image\2.jpg" />
+    <Content Include="Assest\Image\3.jpg" />
+    <Content Include="Assest\Scprits\swiper.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -101,6 +108,7 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
+    <Content Include="Views\Home\Home.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -110,7 +118,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
