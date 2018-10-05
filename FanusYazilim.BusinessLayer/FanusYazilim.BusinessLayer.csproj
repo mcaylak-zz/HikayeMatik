@@ -48,11 +48,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\GenericManager.cs" />
+    <Compile Include="Concrete\Mail\SendMail.cs" />
+    <Compile Include="Concrete\Managers\AdvertisementManager.cs" />
+    <Compile Include="Concrete\Managers\CategoryManager.cs" />
+    <Compile Include="Concrete\Managers\ContentManager.cs" />
+    <Compile Include="Concrete\Managers\UserManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FanusYazilim.DataAccessLayer\FanusYazilim.DataAccessLayer.csproj">
+      <Project>{e61e7386-1a2a-411b-a3ed-0810db26148a}</Project>
+      <Name>FanusYazilim.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FanusYazilim.Entities\FanusYazilim.Entities.csproj">
+      <Project>{e9155f69-eaec-49e8-b320-75def6abfb90}</Project>
+      <Name>FanusYazilim.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FanusYazilim.Entities;
 
-namespace FanusYazilim.DataAccessLayer
+namespace FanusYazilim.DataAccessLayer.EntityFramework
 {
     public partial class DatabaseContext : DbContext
     {
