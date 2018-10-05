@@ -89,7 +89,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assest\Css\style.css" />
+    <Content Include="Assest\Css\styleContext.css" />
     <Content Include="Assest\Css\swiper.min.css" />
+    <Content Include="Assest\fonts\OFL.txt" />
     <Content Include="Assest\Image\1.jpg" />
     <Content Include="Assest\Image\2.jpg" />
     <Content Include="Assest\Image\3.jpg" />
@@ -107,8 +109,27 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Assest\fonts\Montserrat-Black.ttf" />
+    <Content Include="Assest\fonts\Montserrat-BlackItalic.ttf" />
+    <Content Include="Assest\fonts\Montserrat-Bold.ttf" />
+    <Content Include="Assest\fonts\Montserrat-BoldItalic.ttf" />
+    <Content Include="Assest\fonts\Montserrat-ExtraBold.ttf" />
+    <Content Include="Assest\fonts\Montserrat-ExtraBoldItalic.ttf" />
+    <Content Include="Assest\fonts\Montserrat-ExtraLight.ttf" />
+    <Content Include="Assest\fonts\Montserrat-ExtraLightItalic.ttf" />
+    <Content Include="Assest\fonts\Montserrat-Italic.ttf" />
+    <Content Include="Assest\fonts\Montserrat-Light.ttf" />
+    <Content Include="Assest\fonts\Montserrat-LightItalic.ttf" />
+    <Content Include="Assest\fonts\Montserrat-Medium.ttf" />
+    <Content Include="Assest\fonts\Montserrat-MediumItalic.ttf" />
+    <Content Include="Assest\fonts\Montserrat-Regular.ttf" />
+    <Content Include="Assest\fonts\Montserrat-SemiBold.ttf" />
+    <Content Include="Assest\fonts\Montserrat-SemiBoldItalic.ttf" />
+    <Content Include="Assest\fonts\Montserrat-Thin.ttf" />
+    <Content Include="Assest\fonts\Montserrat-ThinItalic.ttf" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Home.cshtml" />
+    <Content Include="Views\Home\Content.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

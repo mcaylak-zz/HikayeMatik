@@ -13,5 +13,9 @@ namespace FanusYazilim.MachineWebUI.Controllers
         {
             return View();
         }
+        public ActionResult Content()
+        {
+            return View();
+        }
     }
 }
