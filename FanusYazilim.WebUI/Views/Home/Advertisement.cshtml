@@ -1,4 +1,5 @@
-﻿
+﻿@using FanusYazilim.Entities;
+@model IEnumerable<Advertisement>
 @{
     ViewBag.Title = "Advertisement";
     Layout = "~/Views/_layout.cshtml";
@@ -23,24 +24,25 @@
             <div class="box-body table-responsive no-padding">
                 <table class="table table-hover">
                     <tr>
-                        
-                        <th>Reklam Adı</th>
-                        
+                        <th>Reklam Sahibi</th>
+
                     </tr>
-                   
+
                     <tr>
-                        <td></td>
-                        <td></td>
-                    
+                        @foreach (var item in Model)
+                        {
+                        <tr>
+                            <td>@item.Owner</td>
+                            <td><a href="@Url.Action("DeleteAdvertisement", "Home", new { AdvertisementID = item.AdvertisementID})"><button type="button" class="btn btn-block btn-danger btn-flat">Sil</button></a></td>
+                        </tr>
+
+                        }
                     </tr>
-                    
-
-
-                </table>
+                    </table>
+                </div>
+                <!-- /.box-body -->
             </div>
-            <!-- /.box-body -->
+            <!-- /.box -->
         </div>
-        <!-- /.box -->
     </div>
-</div>
 

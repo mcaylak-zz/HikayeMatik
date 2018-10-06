@@ -10,19 +10,18 @@
     </div>
     <!-- /.box-header -->
     <!-- form start -->
-    @using (Html.BeginForm("blogEkle", "Admin", FormMethod.Post, htmlAttributes: new { id = "", @class = "", enctype = "multipart/form-data" }))
+    @using (Html.BeginForm("AddAdvertisement", "Home", FormMethod.Post, htmlAttributes: new { id = "", @class = "", enctype = "multipart/form-data" }))
     {
-        <div class="box-body">
-            <div class="form-group">
-                <label for="exampleInputEmail1">Reklam Adı</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" name="blogBaslik" placeholder="">
-            </div>
-
-            <div class="form-group">
-                <label for="exampleInputFile">Reklam Resmi</label>
-                <input type="file" id="exampleInputFile" name="blogResimYol">
-            </div>
+    <div class="box-body">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Reklam Sahibi</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="Owner" placeholder="">
         </div>
+        <div class="form-group">
+            <label for="exampleInputFile">Reklam Resim</label>
+            <input type="file" id="exampleInputFile" name="ImagePath">
+        </div>
+    </div>
         <!-- /.box-body -->
         <div class="box-footer">
             <button type="submit" class="btn btn-primary">Kaydet</button>
