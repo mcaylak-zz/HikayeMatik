@@ -51,12 +51,12 @@
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="EntityFramework\DatabaseContext.cs" />
     <Compile Include="EntityFramework\GenericRepository.cs" />
-    <Compile Include="EntityFramework\Migrations\201810042212012_dirst.cs" />
-    <Compile Include="EntityFramework\Migrations\201810042212012_dirst.Designer.cs">
-      <DependentUpon>201810042212012_dirst.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EntityFramework\Migrations\Configuration.cs" />
     <Compile Include="EntityFramework\RepositoryBase.cs" />
+    <Compile Include="Migrations\201810062025041_ilk.cs" />
+    <Compile Include="Migrations\201810062025041_ilk.Designer.cs">
+      <DependentUpon>201810062025041_ilk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -72,8 +72,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="EntityFramework\Migrations\201810042212012_dirst.resx">
-      <DependentUpon>201810042212012_dirst.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810062025041_ilk.resx">
+      <DependentUpon>201810062025041_ilk.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,4 +1,4 @@
-namespace FanusYazilim.DataAccessLayer.EntityFramework.Migrations
+namespace FanusYazilim.DataAccessLayer.Migrations
 {
     using System;
     using System.Data.Entity;

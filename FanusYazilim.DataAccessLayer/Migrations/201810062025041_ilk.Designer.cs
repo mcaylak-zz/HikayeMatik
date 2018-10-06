@@ -7,13 +7,13 @@ namespace FanusYazilim.DataAccessLayer.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class dirst : IMigrationMetadata
+    public sealed partial class ilk : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(dirst));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(ilk));
         
         string IMigrationMetadata.Id
         {
-            get { return "201810042212012_dirst"; }
+            get { return "201810062025041_ilk"; }
         }
         
         string IMigrationMetadata.Source

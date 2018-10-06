@@ -1,9 +1,9 @@
-namespace FanusYazilim.DataAccessLayer.EntityFramework.Migrations
+namespace FanusYazilim.DataAccessLayer.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class dirst : DbMigration
+    public partial class ilk : DbMigration
     {
         public override void Up()
         {

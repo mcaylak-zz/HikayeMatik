@@ -10,7 +10,7 @@ namespace FanusYazilim.DataAccessLayer.EntityFramework
 {
     public partial class DatabaseContext : DbContext
     {
-        public DatabaseContext():base("HikayeMatik")
+        public DatabaseContext():base("LocalHikayeMatik")
         {
             
         }
