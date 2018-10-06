@@ -51,11 +51,11 @@
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="EntityFramework\DatabaseContext.cs" />
     <Compile Include="EntityFramework\GenericRepository.cs" />
-    <Compile Include="EntityFramework\Migrations\201810042212012_dirst.cs" />
-    <Compile Include="EntityFramework\Migrations\201810042212012_dirst.Designer.cs">
+    <Compile Include="Migrations\201810042212012_dirst.cs" />
+    <Compile Include="Migrations\201810042212012_dirst.Designer.cs">
       <DependentUpon>201810042212012_dirst.cs</DependentUpon>
     </Compile>
-    <Compile Include="EntityFramework\Migrations\Configuration.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="EntityFramework\RepositoryBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -72,7 +72,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="EntityFramework\Migrations\201810042212012_dirst.resx">
+    <EmbeddedResource Include="Migrations\201810042212012_dirst.resx">
       <DependentUpon>201810042212012_dirst.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

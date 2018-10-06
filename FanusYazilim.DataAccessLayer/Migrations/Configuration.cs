@@ -1,9 +1,12 @@
-namespace FanusYazilim.DataAccessLayer.EntityFramework.Migrations
+namespace FanusYazilim.DataAccessLayer.Migrations
 {
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using FanusYazilim.Entities;
+    using FanusYazilim.DataAccessLayer.EntityFramework;
 
     internal sealed class Configuration : DbMigrationsConfiguration<FanusYazilim.DataAccessLayer.EntityFramework.DatabaseContext>
     {
@@ -19,5 +22,6 @@ namespace FanusYazilim.DataAccessLayer.EntityFramework.Migrations
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
         }
+
     }
 }

@@ -1,11 +1,12 @@
-﻿
+﻿@using FanusYazilim.Entities;
+@model IEnumerable<Category>
 @{
     Layout = null;
 }
 <!DOCTYPE html>
 <html>
 <head>
-    <title>3D Swipe Slider</title>
+    <title>Bursa Yıldırım Belediyesi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
    
     <link href="~/Assest/Css/swiper.min.css" rel="stylesheet" />
@@ -15,38 +16,20 @@
     <div class="swiper-container">
 
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="imgBx">
-                    <img src="~/Assest/Image/1.jpg" />
-                </div>
-                <div class="details">
-                    <h2>Kategori 0</h2>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="imgBx">
-                    <img src="~/Assest/Image/1.jpg" />
-                </div>
-                <div class="details">
-                    <h2>Kategori 1</h2>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="imgBx">
-                    <img src="~/Assest/Image/1.jpg">
-                </div>
-                <div class="details">
-                    <h2>Kategori 2</h2>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="imgBx">
-                    <img src="~/Assest/Image/1.jpg">
-                </div>
-                <div class="details">
-                    <h2>Kategori 3</h2>
-                </div>
-            </div>
+
+            @foreach (var item in Model)
+            {
+                  <div class="swiper-slide">
+                      <div class="imgBx">
+                          <img src="~/Assest/Image/1.jpg" />
+                      </div>
+                      <div class="details">
+                          <h2>@item.Name.ToUpper()</h2>
+                      </div>
+                  </div>
+
+            }
+        
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
