@@ -17,6 +17,7 @@ namespace FanusYazilim.Entities
         public string Name { get; set; }
         public int DisplayLength { get; set; }
 
+        public string CategoryImageUrl { get; set; }
         public virtual ICollection<Content> Contents { get; set; }
     }
 }

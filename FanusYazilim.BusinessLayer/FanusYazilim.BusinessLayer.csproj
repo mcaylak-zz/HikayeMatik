@@ -59,6 +59,7 @@
     <Compile Include="Concrete\Managers\CategoryManager.cs" />
     <Compile Include="Concrete\Managers\ContentManager.cs" />
     <Compile Include="Concrete\Managers\UserManager.cs" />
+    <Compile Include="Concrete\Printer\Print.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

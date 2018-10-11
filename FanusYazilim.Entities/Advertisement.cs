@@ -17,5 +17,7 @@ namespace FanusYazilim.Entities
         public string ImagePath { get; set; }
         [StringLength(72)]
         public string Owner { get; set; }
+        public int Second { get; set; }
+
     }
 }

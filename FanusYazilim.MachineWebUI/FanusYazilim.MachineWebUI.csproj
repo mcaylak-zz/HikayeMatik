@@ -94,16 +94,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assest\AdverImage\840.jpg" />
+    <Content Include="Assest\CategoryImage\anı-sohbet.jpeg" />
+    <Content Include="Assest\CategoryImage\aşk.jpg" />
+    <Content Include="Assest\CategoryImage\Biyografi.jpg" />
+    <Content Include="Assest\CategoryImage\Deyim.jpg" />
+    <Content Include="Assest\CategoryImage\Masal.jpg" />
+    <Content Include="Assest\CategoryImage\PratikBilgi.jpg" />
+    <Content Include="Assest\CategoryImage\Siir.jpg" />
+    <Content Include="Assest\CategoryImage\tarihiYerler.jpg" />
+    <Content Include="Assest\Css\ContentButon.css" />
+    <Content Include="Assest\Css\ghpages-materialize.css" />
+    <Content Include="Assest\Css\jquery-3.2.1.min.html" />
+    <Content Include="Assest\Css\prism.css" />
     <Content Include="Assest\Css\style.css" />
     <Content Include="Assest\Css\styleContext.css" />
     <Content Include="Assest\Css\swiper.min.css" />
+    <Content Include="Assest\favicon\apple-touch-icon-152x152.png" />
+    <Content Include="Assest\favicon\favicon-32x32.png" />
+    <Content Include="Assest\favicon\mstile-144x144.png" />
     <Content Include="Assest\fonts\OFL.txt" />
-    <Content Include="Assest\Image\1.jpg" />
-    <Content Include="Assest\Image\2.jpg" />
-    <Content Include="Assest\Image\3.jpg" />
+    <Content Include="Assest\Image\background.jpg" />
+    <Content Include="Assest\Scprits\carbone633.js" />
+    <Content Include="Assest\Scprits\init.js" />
+    <Content Include="Assest\Scprits\jquery-3.2.1.min.js" />
+    <Content Include="Assest\Scprits\jquery.timeago.min.js" />
+    <Content Include="Assest\Scprits\lunr.min.js" />
+    <Content Include="Assest\Scprits\materialize.js" />
+    <Content Include="Assest\Scprits\platform.js" />
+    <Content Include="Assest\Scprits\Print.js" />
+    <Content Include="Assest\Scprits\prism.js" />
+    <Content Include="Assest\Scprits\search.js" />
     <Content Include="Assest\Scprits\swiper.min.js" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -111,6 +137,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="GlobalDb\GlobalTransaction.cs" />
+    <Compile Include="GlobalDb\Advertisement.cs" />
+    <Compile Include="GlobalDb\Category.cs" />
+    <Compile Include="GlobalDb\Content.cs" />
+    <Compile Include="GlobalDb\GlobalContext.cs" />
+    <Compile Include="GlobalDb\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +168,15 @@
     <None Include="packages.config" />
     <Content Include="Views\Home\Home.cshtml" />
     <Content Include="Views\Home\Content.cshtml" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\CustomProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\CustomProfile2.pubxml" />
+    <Content Include="Views\Home\Advertisement.cshtml" />
+    <Content Include="Views\Home\Update.cshtml" />
+    <None Include="Properties\PublishProfiles\CustomProfile3.pubxml" />
+    <None Include="Properties\PublishProfiles\CustomProfile4.pubxml" />
+    <None Include="Properties\PublishProfiles\CustomProfile5.pubxml" />
+    <None Include="Properties\PublishProfiles\CustomProfile6.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -145,6 +186,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Assest\CatImage\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,7 @@
-﻿
+﻿@using FanusYazilim.Entities
+@model IEnumerable<Content> 
+
+
 @{
     Layout = null;
 }
@@ -8,7 +11,29 @@
 <html>
 <head>
     <title>Timeline</title>
+    <script language="javascript" type="text/javascript">
+        function printDiv(divID) {
+            //Get the HTML of div
+            var divElements = document.getElementById(divID).innerHTML;
+            //Get the HTML of whole page
+            var oldPage = document.body.innerHTML;
+
+            //Reset the page's HTML with div's HTML only
+            document.body.innerHTML =
+                "<html><head><title></title></head><body>" +
+                divElements + "</body>";
+
+            //Print Page
+            window.print();
+
+            //Restore orignal HTML
+            document.body.innerHTML = oldPage;
+
+
+        }
+    </script>
     <link href="~/Assest/Css/styleContext.css" rel="stylesheet" />
+    <link href="~/Assest/Css/ContentButon.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -16,60 +41,29 @@
    
     <div class="timeline">
         <ul>
-            <li>
-                <div class="content">
-                    <h3>
-                        What is Lorem İpsum
-                    </h3>
-                    <p>
-                        Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
-                    </p>
-                </div>
-                <div class="time">
-                    <h4>January 2018
-                </div>
-            </li>
-            <li>
-                <div class="content">
-                    <h3>
-                        What is Lorem İpsum
-                    </h3>
-                    <p>
-                        Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
-                    </p>
-                </div>
-                <div class="time">
-                    <h4>January 2018
-                </div>
-            </li>
-            <li>
-                <div class="content">
-                    <h3>
-                        What is Lorem İpsum
-                    </h3>
-                    <p>
-                        Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
-                    </p>
-                </div>
-                <div class="time">
-                    <h4>January 2018
-                </div>
-            </li>
-            <li>
-                <div class="content">
-                    <h3>
-                        What is Lorem İpsum
-                    </h3>
-                    <p>
-                        Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
-                    </p>
-                </div>
-                <div class="time">
-                    <h4>January 2018
-                </div>
-            </li>
+            @foreach (var item in Model)
+            {
+                <li>
+                    <div class="content">
+                        <h3>
+                            What is Lorem İpsum
+                        </h3>
+                        <p id="@item.ContentID">
+                            @item.Description
+                        </p>
+                    </div>
+                    <div class="printt">
+                        <a href="/Home/Advertisement/@item.ContentID" >
+                            <svg style="color:"><rect></rect></svg>YAZDIR <br />@item.PrintLength kez yazdırıldı.
+                        </a>
+                    </div>
+                </li>
+            }
+
+
             <div style="clear: both;"></div>
         </ul>
     </div>
 </body>
+
 </html>

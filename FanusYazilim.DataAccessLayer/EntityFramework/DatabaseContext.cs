@@ -4,6 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FanusYazilim.DataAccessLayer.Databasenitializer;
 using FanusYazilim.Entities;
 
 namespace FanusYazilim.DataAccessLayer.EntityFramework
@@ -12,7 +13,7 @@ namespace FanusYazilim.DataAccessLayer.EntityFramework
     {
         public DatabaseContext():base("LocalHikayeMatik")
         {
-            
+            Database.SetInitializer(new Initializer());
         }
 
         public virtual DbSet<User> Users { get; set; }

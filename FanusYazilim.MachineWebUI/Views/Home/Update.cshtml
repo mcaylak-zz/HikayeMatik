@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Guncelle</title>
+</head>
+<body>
+    <div>
+        <a href="/Home/Update/1" style="text-decoration: none;"><h2>KATEGORİ GUNCELLE</h2></a>
+        <a href="/Home/Update/2" style="text-decoration: none;"><h2>İÇERİK GUNCELLE</h2></a>
+        <a href="/Home/Update/3" style="text-decoration: none;"><h2>REKLAM GUNCELLE</h2></a>
+    </div>
+</body>
+</html>
+
+
+
+@if (ViewBag.message != "")
+{
+    <h2>@ViewBag.message</h2>
+}
+
+

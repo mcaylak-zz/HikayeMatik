@@ -8,7 +8,6 @@
 <head>
     <title>Bursa Yıldırım Belediyesi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-   
     <link href="~/Assest/Css/swiper.min.css" rel="stylesheet" />
     <link href="~/Assest/Css/style.css" rel="stylesheet" />
 </head>
@@ -19,17 +18,18 @@
 
             @foreach (var item in Model)
             {
-                  <div class="swiper-slide">
-                      <div class="imgBx">
-                          <img src="~/Assest/Image/1.jpg" />
-                      </div>
-                      <div class="details">
-                          <h2>@item.Name.ToUpper()</h2>
-                      </div>
-                  </div>
-
+                
+                    <div class="swiper-slide">
+                        <div class="imgBx">
+                            <img src="~/@item.CategoryImageUrl" />
+                        </div>
+                        <div class="details">
+                            <a href="/Home/Content/@item.CategoryID" style="text-decoration: none;"><h2>@item.Name.ToUpper()</h2></a>
+                        </div>
+                    </div>
+               
             }
-        
+
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>

@@ -49,12 +49,33 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IRepository.cs" />
+    <Compile Include="Databasenitializer\Initializer.cs" />
     <Compile Include="EntityFramework\DatabaseContext.cs" />
     <Compile Include="EntityFramework\GenericRepository.cs" />
     <Compile Include="EntityFramework\RepositoryBase.cs" />
     <Compile Include="Migrations\201810062025041_ilk.cs" />
     <Compile Include="Migrations\201810062025041_ilk.Designer.cs">
       <DependentUpon>201810062025041_ilk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810071610214_two.cs" />
+    <Compile Include="Migrations\201810071610214_two.Designer.cs">
+      <DependentUpon>201810071610214_two.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810081741019_tree.cs" />
+    <Compile Include="Migrations\201810081741019_tree.Designer.cs">
+      <DependentUpon>201810081741019_tree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810102228562_tree1.cs" />
+    <Compile Include="Migrations\201810102228562_tree1.Designer.cs">
+      <DependentUpon>201810102228562_tree1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810102351315_four.cs" />
+    <Compile Include="Migrations\201810102351315_four.Designer.cs">
+      <DependentUpon>201810102351315_four.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810110206305_five.cs" />
+    <Compile Include="Migrations\201810110206305_five.Designer.cs">
+      <DependentUpon>201810110206305_five.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,6 +95,21 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201810062025041_ilk.resx">
       <DependentUpon>201810062025041_ilk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810071610214_two.resx">
+      <DependentUpon>201810071610214_two.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810081741019_tree.resx">
+      <DependentUpon>201810081741019_tree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810102228562_tree1.resx">
+      <DependentUpon>201810102228562_tree1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810102351315_four.resx">
+      <DependentUpon>201810102351315_four.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810110206305_five.resx">
+      <DependentUpon>201810110206305_five.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
